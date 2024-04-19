@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q4 Seatwork 2</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	
+<style>	
+	body{
+		background-color: lightseagreen;
+		font-family: Arial;
+		color: white;
+	}
+</style>
+</head>
+<body>
+<center>
+	<h1>Calculate</h1>
+	<p>Compute for the following Arithmetic Operations</p>
+	<div class="col-md-6" id="box">
+			<form class="form-group">
+			<h4>Given:</h4>
+			<label>Enter a value for x:</label>
+			<input class="form-control btn-default" type="number" id="numX">
+			<br>
+			<label>Enter a value for y:</label>
+			<input class="form-control btn-default" type="number" id="numY">
+
+		<details ontoggle="message()">
+			<summary>Click here</summary>
+				<i>Click the buttons below to calculate.</i>
+		</details>
+			<br><br>
+				<button type="submit" id="submit" class="btn btn-danger btn-sm btn-block" onclick="add()">Find the Sum</button>
+				<button type="submit" id="submit" class="btn btn-warning btn-sm btn-block" onclick="subtract()">Find the Difference`</button>
+				<button type="submit" id="submit" class="btn btn-success btn-sm btn-block" onclick="multiply()">Find the Product</button>
+				<button type="submit" id="submit" class="btn btn-primary btn-sm btn-block" onclick="divide()">Find the Quotient</button>
+			</form>
+
+	</div>
+</center>
+
+<script type="text/javascript">
+
+function add(){
+	var numX = document.getElementById("numX").value;
+	var numY = document.getElementById("numY").value;
+	var add = Number(numX) + Number(numY);
+
+	alert(add);
+}
+function subtract(){
+	var numX = document.getElementById("numX").value;
+	var numY = document.getElementById("numY").value;
+	var subtract = Number(numX) - Number(numY);
+
+	alert(subtract);
+}
+function multiply(){
+	var numX = document.getElementById("numX").value;
+	var numY = document.getElementById("numY").value;
+	var multiply = Number(numX) * Number(numY);
+
+	alert(multiply);
+}
+function divide(){
+	var numX = document.getElementById("numX").value;
+	var numY = document.getElementById("numY").value;
+	var divide = Number(numX) / Number(numY);
+
+	alert(divide);
+}
+</script>
+
+<div>
+	
+</div>
+
+</body>
+</html>
